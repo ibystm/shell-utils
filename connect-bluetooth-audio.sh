@@ -1,9 +1,11 @@
 #!/bin/bash
 
+source .env
 # デバイス名を設定
 DEVICE_NAME="Beats Fit Pro"
+# .envファイルからデバイスのMACアドレスを取得
+DEVICE_ADDRESS=$DEVICE_MAC_ADDRESS
 # デバイスのMACアドレスを設定
-DEVICE_ADDRESS="HOGEHOGE"
 # 現在のデフォルトのオーディオデバイスを保存
 ORIGINAL_DEVICE=$(SwitchAudioSource -c)
 
